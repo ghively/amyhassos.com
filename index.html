@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amy Hassos | Civil Drafter & CAD Technician</title>
+    <meta name="description" content="Portfolio of Amy Hassos, a Civil Drafter with over 25 years of experience in CAD, design technology, and publishing.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS (via CDN for standalone portability) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Open Sans"', 'sans-serif'],
+                        display: ['"Montserrat"', 'sans-serif'],
+                    },
+                    colors: {
+                        slate: {
+                            850: '#1e293b',
+                            900: '#0f172a',
+                        },
+                        blueprint: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .blueprint-grid {
+            background-color: #0f172a;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .hero-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230ea5e9' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="font-display font-bold text-xl text-slate-900 tracking-tight">AMY HASSOS</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-slate-600 hover:text-blueprint-700 transition-colors font-medium">About</a>
+                    <a href="#experience" class="text-slate-600 hover:text-blueprint-700 transition-colors font-medium">Experience</a>
+                    <a href="#portfolio" class="text-slate-600 hover:text-blueprint-700 transition-colors font-medium">Portfolio</a>
+                    <a href="#contact" class="px-4 py-2 rounded-full bg-blueprint-700 text-white font-semibold hover:bg-blueprint-900 transition-colors shadow-md transform hover:-translate-y-0.5">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 blueprint-grid overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-slate-900/90"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center md:flex md:items-center md:justify-center md:text-left gap-12">
+            
+            <div class="md:w-1/2 lg:w-2/3">
+                <h1 class="text-4xl md:text-6xl font-display font-bold text-white mb-6 tracking-tight">
+                    Precision in Design.<br/>
+                    <span class="text-blueprint-500">Excellence in Drafting.</span>
+                </h1>
+                <p class="mt-4 max-w-2xl text-lg text-slate-300 md:max-w-none leading-relaxed">
+                    For over 25 years, I have been in the Print, Publishing, and Design industry. My journey began as a paste-up artist, producing letterheads and business cards, and evolved alongside the desktop publishing revolution. 
+                </p>
+                <p class="mt-4 max-w-2xl text-lg text-slate-300 md:max-w-none leading-relaxed">
+                     After a successful tenure as a composition manager for John Wiley and Sons, I pivoted to earn an Associates of Applied Science Degree in Design Technology. I am now focused on opportunities in civil drafting and land surveying.
+                </p>
+                <blockquote class="mt-6 border-l-4 border-blueprint-500 pl-4 italic text-slate-400">
+                    "Never forget why you're designing in the first place."
+                </blockquote>
+
+                <div class="mt-10 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <a href="#portfolio" class="px-8 py-3 rounded-lg bg-white text-slate-900 font-bold hover:bg-slate-100 transition-colors shadow-lg">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="px-8 py-3 rounded-lg border-2 border-blueprint-500 text-blueprint-500 font-bold hover:bg-blueprint-500 hover:text-white transition-all">
+                        Get in Touch
+                    </a>
+                    <a href="https://www.linkedin.com/in/amy-hassos-9b567b57/" target="_blank" class="px-8 py-3 rounded-lg bg-[#0077b5] text-white font-bold hover:bg-[#005582] transition-colors shadow-lg flex items-center justify-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile Picture -->
+            <div class="mt-12 md:mt-0 md:w-1/2 lg:w-1/3 flex justify-center">
+                <img src="profile.jpeg" alt="Amy Hassos" class="w-40 h-40 md:w-60 md:h-60 rounded-full border-4 border-white shadow-2xl object-cover object-center">
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section class="py-12 bg-white shadow-sm -mt-8 relative z-20 max-w-6xl mx-auto rounded-xl mx-4 lg:mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 px-8 text-center">
+            <div class="p-4">
+                <div class="text-blueprint-700 mb-2">
+                    <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </div>
+                <h3 class="font-bold text-slate-800">AutoCAD & Inventor</h3>
+                <p class="text-sm text-slate-500 mt-1">Autodesk Certified</p>
+            </div>
+            <div class="p-4">
+                <div class="text-blueprint-700 mb-2">
+                    <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                </div>
+                <h3 class="font-bold text-slate-800">Adobe Creative Suite</h3>
+                <p class="text-sm text-slate-500 mt-1">InDesign, Illustrator, Photoshop</p>
+            </div>
+            <div class="p-4">
+                <div class="text-blueprint-700 mb-2">
+                    <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                </div>
+                <h3 class="font-bold text-slate-800">Document Control</h3>
+                <p class="text-sm text-slate-500 mt-1">Acrobat & Microsoft Office</p>
+            </div>
+            <div class="p-4">
+                <div class="text-blueprint-700 mb-2">
+                    <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </div>
+                <h3 class="font-bold text-slate-800">Project Management</h3>
+                <p class="text-sm text-slate-500 mt-1">Staff Supervision & Training</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-display font-bold text-slate-900">Professional Experience</h2>
+                <div class="w-16 h-1 bg-blueprint-500 mx-auto mt-4 rounded"></div>
+            </div>
+
+            <div class="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+                
+                <!-- Job 1: County Materials -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-blueprint-500 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 text-white font-bold">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-xl shadow-md border border-slate-100 hover:border-blueprint-200 transition-all">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
+                            <h3 class="font-bold text-lg text-slate-900">Draftsman</h3>
+                            <span class="text-xs font-semibold px-2 py-1 bg-blueprint-50 text-blueprint-700 rounded-full">May 2016 - Present</span>
+                        </div>
+                        <div class="text-blueprint-600 font-medium text-sm mb-3">County Materials, Inc.</div>
+                        <p class="text-slate-600 text-sm">Draft pre-cast concrete structures using proprietary CAD software and AutoCAD for box culverts. Project manager for the state of Illinois, overseeing production across 3 locations.</p>
+                    </div>
+                </div>
+
+                <!-- Job 2: Ivy Tech -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 text-slate-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-xl shadow-md border border-slate-100 hover:border-blueprint-200 transition-all">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
+                            <h3 class="font-bold text-lg text-slate-900">Adjunct Instructor & Student</h3>
+                            <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded-full">Jun. 2014 - Present</span>
+                        </div>
+                        <div class="text-blueprint-600 font-medium text-sm mb-3">Ivy Tech Community College</div>
+                        <p class="text-slate-600 text-sm">Instructor for AutoCAD and Autodesk Inventor, teaching 2D and 3D fundamentals. Graduated Summa Cum Laude (4.0 GPA) and awarded Outstanding Student of the Year (2016).</p>
+                    </div>
+                </div>
+
+                <!-- Job 3: John Wiley & Sons -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 text-slate-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-xl shadow-md border border-slate-100 hover:border-blueprint-200 transition-all">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
+                            <h3 class="font-bold text-lg text-slate-900">Manager</h3>
+                            <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded-full">Jan. 2009 - Nov. 2013</span>
+                        </div>
+                        <div class="text-blueprint-600 font-medium text-sm mb-3">John Wiley & Sons, Indianapolis, IN</div>
+                        <p class="text-slate-600 text-sm">Managed 2nd shift production team. Produced branded titles (For Dummies, Bibles, Frommers). Documented processes for Graphics, QC, Layout, and Automation.</p>
+                    </div>
+                </div>
+
+                <!-- Job 4: JDR Web Solutions -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 text-slate-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-xl shadow-md border border-slate-100 hover:border-blueprint-200 transition-all">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
+                            <h3 class="font-bold text-lg text-slate-900">Manager</h3>
+                            <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded-full">Jan. 2008 - Jan. 2009</span>
+                        </div>
+                        <div class="text-blueprint-600 font-medium text-sm mb-3">JDR Web Solutions, Indianapolis, IN</div>
+                        <p class="text-slate-600 text-sm">Managed website deadlines, created visually appealing sites, and corrected HTML. Worked with clients to establish brand consistency.</p>
+                    </div>
+                </div>
+
+                <!-- Job 5: Specialized Composition -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 text-slate-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-xl shadow-md border border-slate-100 hover:border-blueprint-200 transition-all">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
+                            <h3 class="font-bold text-lg text-slate-900">Owner</h3>
+                            <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded-full">Feb. 2002 - Dec. 2008</span>
+                        </div>
+                        <div class="text-blueprint-600 font-medium text-sm mb-3">Specialized Composition, Indianapolis, IN</div>
+                        <p class="text-slate-600 text-sm">Provided freelance design services for clients like Cisco Press, O'Reilly Media, and New Riders. Designed layouts and troubleshot printer files.</p>
+                    </div>
+                </div>
+
+                <!-- Job 6: Pearson Education -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 text-slate-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-xl shadow-md border border-slate-100 hover:border-blueprint-200 transition-all">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
+                            <h3 class="font-bold text-lg text-slate-900">Compositor / Illustrator</h3>
+                            <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded-full">Sept. 1999 - Feb. 2002</span>
+                        </div>
+                        <div class="text-blueprint-600 font-medium text-sm mb-3">Pearson Education, Indianapolis, IN</div>
+                        <p class="text-slate-600 text-sm">Produced high-quality book interiors for New Riders and Peachpit imprints. Created line art, illustrations, and prepared files for offset printing.</p>
+                    </div>
+                </div>
+
+                 <!-- Job 7: Thermographics -->
+                 <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 text-slate-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-xl shadow-md border border-slate-100 hover:border-blueprint-200 transition-all">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
+                            <h3 class="font-bold text-lg text-slate-900">Supervisor Desktop Publishing</h3>
+                            <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded-full">1989 - 1998</span>
+                        </div>
+                        <div class="text-blueprint-600 font-medium text-sm mb-3">Business Cards Tomorrow / Thermographics</div>
+                        <p class="text-slate-600 text-sm">Supervised a team of 6 staff members for the 2nd shift at a large wholesale printing company.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-display font-bold text-slate-900 mb-8">Education & Honors</h2>
+            <div class="bg-slate-50 rounded-xl p-8 border border-slate-100 inline-block text-left shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex items-center gap-4 mb-2">
+                    <div class="p-3 bg-blueprint-100 text-blueprint-700 rounded-full">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v7"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">AAS in Design Technology</h3>
+                        <div class="text-blueprint-600 font-medium">Ivy Tech Community College • 2014-2016</div>
+                    </div>
+                </div>
+                <div class="mt-4 text-slate-600 space-y-2">
+                    <p class="font-semibold text-slate-800">Honors & Achievements:</p>
+                    <ul class="list-disc list-inside space-y-1 ml-2">
+                        <li>Graduated Summa Cum Laude (4.0 GPA)</li>
+                        <li>Outstanding Student of the Year (2016)</li>
+                        <li>Phi Theta Kappa Honor Society Member</li>
+                        <li>Academic Dean’s List</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-display font-bold text-slate-900">Selected Portfolio</h2>
+                <p class="text-slate-500 mt-4 max-w-2xl mx-auto">A collection of academic and professional projects demonstrating proficiency in architectural, mechanical, and civil design.</p>
+                <div class="w-16 h-1 bg-blueprint-500 mx-auto mt-4 rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <a href="the-garden-project.html" class="block group bg-slate-50 rounded-xl overflow-hidden hover:shadow-xl transition-all border border-slate-100 hover:-translate-y-1">
+                    <div class="h-48 bg-slate-800 relative overflow-hidden">
+                        <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800')] bg-cover bg-center group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg class="w-12 h-12 text-blueprint-400 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg text-slate-900 mb-2 group-hover:text-blueprint-600 transition-colors">The Garden Project</h3>
+                        <p class="text-sm text-slate-600 mb-4">Landscape architecture design focusing on sustainable community spaces.</p>
+                        <span class="inline-block px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-medium text-slate-500">Landscape Design</span>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="residential-architecture.html" class="block group bg-slate-50 rounded-xl overflow-hidden hover:shadow-xl transition-all border border-slate-100 hover:-translate-y-1">
+                    <div class="h-48 bg-slate-800 relative overflow-hidden">
+                        <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1558227691-66d3e7d979fa?auto=format&fit=crop&q=80&w=800')] bg-cover bg-center group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg class="w-12 h-12 text-blueprint-400 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg text-slate-900 mb-2 group-hover:text-blueprint-600 transition-colors">Residential Architecture</h3>
+                        <p class="text-sm text-slate-600 mb-4">Architecture I & II course projects demonstrating residential planning and drafting.</p>
+                        <span class="inline-block px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-medium text-slate-500">Residential</span>
+                    </div>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="mechanical-graphics.html" class="block group bg-slate-50 rounded-xl overflow-hidden hover:shadow-xl transition-all border border-slate-100 hover:-translate-y-1">
+                    <div class="h-48 bg-slate-800 relative overflow-hidden">
+                        <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800')] bg-cover bg-center group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg class="w-12 h-12 text-blueprint-400 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg text-slate-900 mb-2 group-hover:text-blueprint-600 transition-colors">Mechanical Graphics</h3>
+                        <p class="text-sm text-slate-600 mb-4">Precision mechanical parts and assembly drawings created with AutoCAD.</p>
+                        <span class="inline-block px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-medium text-slate-500">Mechanical</span>
+                    </div>
+                </a>
+
+                 <!-- Project 4 -->
+                 <a href="feasibility-studies.html" class="block group bg-slate-50 rounded-xl overflow-hidden hover:shadow-xl transition-all border border-slate-100 hover:-translate-y-1">
+                    <div class="h-48 bg-slate-800 relative overflow-hidden">
+                        <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800')] bg-cover bg-center group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg class="w-12 h-12 text-blueprint-400 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg text-slate-900 mb-2 group-hover:text-blueprint-600 transition-colors">Feasibility Studies</h3>
+                        <p class="text-sm text-slate-600 mb-4">Comprehensive analysis and reporting for proposed construction and design projects.</p>
+                        <span class="inline-block px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-medium text-slate-500">Research</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="bg-slate-900 text-white py-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-display font-bold mb-6">Ready to Collaborate?</h2>
+            <p class="text-slate-400 mb-8 text-lg">I am always interested in new challenges and opportunities to apply my drafting and design skills.</p>
+            <a href="mailto:amyhassos@gmail.com" class="inline-flex items-center gap-2 px-8 py-4 bg-blueprint-600 hover:bg-blueprint-700 rounded-lg font-bold text-lg transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                Send me an Email
+            </a>
+            <div class="mt-12 pt-8 border-t border-slate-800 text-slate-500 text-sm">
+                &copy; 2025 Amy Hassos. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

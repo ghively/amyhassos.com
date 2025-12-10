@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residential Architecture | Amy Hassos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Open Sans"', 'sans-serif'],
+                        display: ['"Montserrat"', 'sans-serif'],
+                    },
+                    colors: {
+                        slate: { 850: '#1e293b', 900: '#0f172a' },
+                        blueprint: { 50: '#f0f9ff', 100: '#e0f2fe', 500: '#0ea5e9', 700: '#0369a1', 900: '#0c4a6e' }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="font-display font-bold text-xl text-slate-900 tracking-tight hover:text-blueprint-700 transition-colors">AMY HASSOS</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#about" class="text-slate-600 hover:text-blueprint-700 transition-colors font-medium">About</a>
+                    <a href="index.html#experience" class="text-slate-600 hover:text-blueprint-700 transition-colors font-medium">Experience</a>
+                    <a href="index.html#portfolio" class="text-slate-600 hover:text-blueprint-700 transition-colors font-medium">Portfolio</a>
+                    <a href="index.html#contact" class="px-4 py-2 rounded-full bg-blueprint-700 text-white font-semibold hover:bg-blueprint-900 transition-colors shadow-md">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="pt-32 pb-12 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <a href="index.html#portfolio" class="inline-flex items-center text-blueprint-400 hover:text-white mb-6 transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Back to Portfolio
+            </a>
+            <h1 class="text-4xl md:text-5xl font-display font-bold mb-4">Residential Architecture</h1>
+            <p class="text-xl text-slate-300">Residential Planning & Drafting</p>
+        </div>
+    </header>
+    <main class="flex-grow py-16 px-4">
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden border border-slate-100">
+            <div class="h-64 md:h-96 bg-slate-200 relative">
+                <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558227691-66d3e7d979fa?auto=format&fit=crop&q=80&w=1200')] bg-cover bg-center"></div>
+            </div>
+            <div class="p-8 md:p-12">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6">Project Overview</h2>
+                <p class="text-slate-600 leading-relaxed mb-6">
+                    Architecture I & II course projects demonstrating comprehensive residential planning. This portfolio entry highlights the progression from initial concept sketches to full construction documentation.
+                </p>
+                <div class="p-6 bg-blueprint-50 rounded-lg border border-blueprint-100">
+                    <h3 class="font-bold text-blueprint-900 mb-2">Scope of Work</h3>
+                    <ul class="list-disc list-inside text-slate-700 space-y-2">
+                        <li>Floor plans and spatial layout optimization.</li>
+                        <li>Elevation drawings (Front, Rear, Side).</li>
+                        <li>Section details and foundation plans.</li>
+                        <li>Compliance with standard residential building codes.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-slate-900 text-white py-12 text-center border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4">
+            <p class="text-slate-500 text-sm">&copy; 2025 Amy Hassos. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
