@@ -22,3 +22,4 @@ This portfolio website was reconstructed and modernized based on forensic recove
 *   **Resume/Experience**: Extracted from `profile.pdf`.
 *   **Project Titles**: Inferred from the recovered URL structure of the previous website (e.g., `the-garden-project.html`, `mechanical-graphics.html`).
 *   **Contact Info**: Preserved from the original site and profile.
+# auto-deploy test
